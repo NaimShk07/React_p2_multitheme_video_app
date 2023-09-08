@@ -1,5 +1,12 @@
 ## learings
 
+- Install
+
+```
+npm i react-router-dom react-icons sass axios react-toastify @chakra-ui/react @emotion/react @emotion/styled framer-motion
+```
+
+- first setup make assets, components, and styles:make app and colors and import it
 - first we have the charkaprovider in main.jsx or index.js file ,wrap around app.jsx
 - add colormodeswitcher , with this code
 

@@ -18,9 +18,9 @@ import { BiMenuAltLeft } from "react-icons/bi";
 const Header = () => {
 	const { isOpen, onClose, onOpen } = useDisclosure();
 	return (
-		<div >
+		<div>
 			<Button
-			style={{zIndex:999}}
+				zIndex={"overlay"}
 				colorScheme="purple"
 				pos={"fixed"}
 				top={4}
@@ -30,7 +30,6 @@ const Header = () => {
 				h={10}
 				borderRadius={"full"}
 				onClick={onOpen}
-
 			>
 				<BiMenuAltLeft size={20} />
 			</Button>
