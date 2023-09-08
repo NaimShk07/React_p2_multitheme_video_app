@@ -31,9 +31,9 @@ const Home = () => {
 					h={"full"}
 					p={4}
 					alignItems={"center"}
-					flexDirection={["column","column","column", "row"]}
+					flexDirection={["column", "column", "column", "row"]}
 				>
-					<Image src={img5} h={[40,240, 400]} />
+					<Image src={img5} h={[40, 240, 400]} />
 					<Text
 						letterSpacing={"widest"}
 						lineHeight={"190%"}
@@ -59,6 +59,12 @@ const Home = () => {
 	);
 };
 
+const imgOption = {
+	h: "full",
+	w: "full",
+	objectFit: "cover",
+};
+
 const MyCarousel = () => (
 	<Carousel
 		infiniteLoop
@@ -69,25 +75,25 @@ const MyCarousel = () => (
 		interval={2000}
 	>
 		<Box w="full" h={"100vh"}>
-			<Image src={img1} />
+			<Image src={img1} {...imgOption} />
 			<Heading {...headingOption} bgColor={"blackAlpha.600"} color={"white"}>
 				Watch the future
 			</Heading>
 		</Box>
 		<Box w="full" h={"100vh"}>
-			<Image src={img2} />
+			<Image src={img2} {...imgOption} />
 			<Heading {...headingOption} bgColor={"blackAlpha.600"} color={"white"}>
 				Future is Gaming
 			</Heading>
 		</Box>
 		<Box w="full" h={"100vh"}>
-			<Image src={img3} />
+			<Image src={img3} {...imgOption} />
 			<Heading {...headingOption} bgColor={"blackAlpha.600"} color={"white"}>
 				Gaming on console
 			</Heading>
 		</Box>
 		<Box w="full" h={"100vh"}>
-			<Image src={img4} />
+			<Image src={img4} {...imgOption} />
 			<Heading {...headingOption} bgColor={"blackAlpha.600"} color={"white"}>
 				Night life is cool
 			</Heading>
